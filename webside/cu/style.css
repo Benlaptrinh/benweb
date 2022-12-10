@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  background: #333;
+}
+
+.menu > li {
+  display: inline-block;
+  margin: 0px 10px;
+  /* background-color: chocolate; */
+  padding: 10px 0px;
+  /* position: relative; */
+}
+.menu  li {
+  position: relative;
+}
+.menu li:hover > .submenu{
+  display: block;
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /* background-color: rgb(75, 77, 77); */
+  padding: 20px;
+}
+.submenu {
+  position: absolute;
+  top: 40px;
+  left: -10px;
+  width: 100px;
+  background-color: aliceblue;
+  display: none;
+}
+
+.submenu li:hover{
+  background-color: rgb(112, 195, 250);
+}
+.submenu a{
+  display: block;
+  color: black;
+  padding: 8px 15px;
+  border-bottom: 2px solid #ddd;
+}
+.submenu .submenu{
+  width: 105px;
+  left: 100%;
+  top:0;
+  display: none;
+}
+.submenu .submenu .submenu{
+  width: 135px;
+}
+
